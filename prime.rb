@@ -3,4 +3,9 @@ def prime?(number)
   if number > 1
     range =(statr..number-1).to_a
     range.none? do
-      
+      number % num_to_test == 0
+    end
+  else
+    false
+  end
+end
